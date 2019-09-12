@@ -1,0 +1,36 @@
+<p-accordion>
+  <p-accordionTab header="Nodes">
+    <div class="card card-plain">
+      <div class="header">
+        <h4 class="title">Table on Plain Background</h4>
+        <p class="category">Here is a subtitle for this table</p>
+      </div>
+      <div class="content table-responsive table-full-width">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Maintenance</th>
+              <th>Standby</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let n of nodeList">
+              <td>{{n.name}}</td>
+              <td>{{n.online}}</td>
+              <td>{{n.maintenance}}</td>
+              <td>{{n.standby}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </p-accordionTab>
+  <p-accordionTab header="Resources">
+    Content 2
+  </p-accordionTab>
+  <p-accordionTab header="Others">
+    Content 3
+  </p-accordionTab>
+</p-accordion>
