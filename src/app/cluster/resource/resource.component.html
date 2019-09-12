@@ -1,0 +1,68 @@
+<app-nav-menu></app-nav-menu>
+<mat-card>
+  <h1>Managed Resources</h1>
+
+  <div class="button-group">
+    <p>Here you can manage the available cluster resources</p>
+  </div>
+
+  <div class="example-header">
+    <mat-form-field>
+      <span class="example-fill-remaining-space"></span>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+    </mat-form-field>
+  </div>
+
+  <div class="mat-elevation-z8">
+    <mat-table [dataSource]="datasource" matSort>
+      <ng-container matColumnDef="Name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Name}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="Status">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <i class="material-icons">{{element.Status ? "done" : "error_outline"}}</i>
+        </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="ResType">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.ResType}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="Location">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Location </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Location}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="Options">
+        <mat-header-cell *matHeaderCellDef>
+          <button mat-icon-button color="primary" (click)="openAddDialog()">
+            <mat-icon>add_circle</mat-icon>
+          </button>
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <button mat-icon-button color="primary" (click)="openEditDialog(element)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" (click)="openMigrateDialog(element)">
+            <mat-icon>cached</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" (click)="openDeleteDialog(element)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="loading">
+        <mat-footer-cell *matFooterCellDef colspan="6">
+          Loading data...
+        </mat-footer-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+      <mat-footer-row *matFooterRowDef="['loading']" [ngClass]="{'hide':datasource!=null}"></mat-footer-row>
+    </mat-table>
+  </div>
+
+  <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 50]" showFirstLastButtons>
+  </mat-paginator>
+
+</mat-card>
