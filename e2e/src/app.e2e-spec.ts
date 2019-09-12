@@ -8,9 +8,14 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display Sign in message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to Angular!');
+    expect(page.getTitleText()).toEqual('Sign In');
+  });
+
+  it('should display Login button', () => {
+    page.navigateTo();
+    expect(page.getLoginButton().getText()).toEqual('Login');
   });
 
   afterEach(async () => {

@@ -1,1 +1,193 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+
+body {
+  background-color: #b5b5b5;
+  ;
+}
+
+
+input.form-control,
+input.form-control:focus {
+  background-color: #636b7b;
+  color: #fff;
+  border: 1px solid #636b7b;
+
+}
+
+input.form-control:focus {
+  box-shadow: none;
+}
+
+button[type=submit].btn {
+  border-radius: 20px;
+  background-color: #04c582;
+  color: #fff;
+}
+
+div.form-group label:not(.text-danger) {
+  color: #545d6a;
+  font-weight: 700;
+}
+
+div.form-group.required>label:first-child:after {
+  content: '*';
+  color: #fff;
+  padding-left: 5px;
+}
+
+#toast-container>div {
+  opacity: 1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.wrapped-div {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #2e3137;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Tabs */
+.tab-header {
+  text-align: center;
+}
+
+.tab-header h2.active {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.tab-header h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 30px 40px 10px 40px;
+  cursor: pointer;
+  color: #545d6a;
+  border-bottom: 2px solid #545d6a;
+}
+
+.tab-header h2:focus {
+  outline: none;
+}
+
+form {
+  margin: 0px 16px;
+}
+
+div.form-group input.invalid {
+  border: 1px solid #dc3545;
+}
+
+div.form-group label:first-child {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+form {
+  margin: 0px 16px;
+}
+
+div.form-group input.invalid {
+  border: 1px solid #dc3545;
+}
+
+div.form-group label:first-child {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-warn {
+  background: #005b9f;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}
+
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+mat-toolbar {
+  border-radius: 3px;
+}
+
+@media(max-width: 959px) {
+  mat-toolbar {
+    border-radius: 0px;
+  }
+}
+
+.mat-toolbar {
+  height: 7vh;
+}
+
+div {
+  overflow: inherit;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+button {
+  font-size: 110%;
+  min-width: min-content;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mat-header-cell {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+mat-footer-row mat-footer-cell {
+  justify-content: center;
+  font-style: italic;
+}

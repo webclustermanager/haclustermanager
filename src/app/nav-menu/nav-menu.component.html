@@ -1,0 +1,10 @@
+<mat-toolbar color="warn">
+  <span>Pacemaker CM</span>
+  <span class="example-fill-remaining-space"></span>
+  <button mat-button (click)="btnStatusClick()">Status</button>
+  <button mat-button (click)="btnResourceClick()">Resources</button>
+  <button mat-button>
+    <mat-icon>person</mat-icon>{{userName}}
+  </button>
+  <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</mat-toolbar>

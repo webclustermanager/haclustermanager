@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+// import { MenuModule } from 'primeng/menu';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+
+  // @ViewChild('bigMenu') bigMenu: Menu;
+  // @ViewChild('smallMenu') smallMenu: Menu;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 }
