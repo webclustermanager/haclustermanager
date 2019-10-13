@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAClusterManager", "HAClusterManager\HAClusterManager.csproj", "{7B1891DD-DA69-4119-8E17-DF2CD7BD864F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HAClusterManager", "HAClusterManager\HAClusterManager.csproj", "{7B1891DD-DA69-4119-8E17-DF2CD7BD864F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAClusterManagerTest", "HAClusterManagerTest\HAClusterManagerTest.csproj", "{076CE6E6-E597-4988-A8CF-C856855FB21B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7B1891DD-DA69-4119-8E17-DF2CD7BD864F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B1891DD-DA69-4119-8E17-DF2CD7BD864F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B1891DD-DA69-4119-8E17-DF2CD7BD864F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076CE6E6-E597-4988-A8CF-C856855FB21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076CE6E6-E597-4988-A8CF-C856855FB21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076CE6E6-E597-4988-A8CF-C856855FB21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076CE6E6-E597-4988-A8CF-C856855FB21B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
