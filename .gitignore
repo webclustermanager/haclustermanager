@@ -45,3 +45,14 @@ Thumbs.db
 /.vs
 /HAClusterManager/obj
 /HAClusterManager/bin/Debug/netcoreapp2.1
+/HAClusterManagerTest/bin/Debug/netcoreapp2.2
+*.cache
+*.CopyComplete
+/HAClusterManagerTest/obj/Debug/netcoreapp2.2/HAClusterManagerTest.dll
+/HAClusterManagerTest/obj/Debug/netcoreapp2.2/HAClusterManagerTest.csproj.FileListAbsolute.txt
+/HAClusterManagerTest/obj/Debug/netcoreapp2.2/HAClusterManagerTest.pdb
+/HAClusterManagerTest/obj/HAClusterManagerTest.csproj.nuget.dgspec.json
+/HAClusterManagerTest/obj/HAClusterManagerTest.csproj.nuget.g.props
+/HAClusterManagerTest/obj/HAClusterManagerTest.csproj.nuget.g.targets
+/HAClusterManagerTest/obj/project.assets.json
+/HAClusterManagerTest/obj/Debug/netcoreapp2.2
