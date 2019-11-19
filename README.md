@@ -17,7 +17,10 @@ npm install
 
 ## Użycie
 
-
+Interfejs pozwala zarządzać podstawowymi zasobami klastra, do których dostęp uzyskujemy klikając przycisk "Resources" w głównym menu.
+Zasoby są prezentowane w formie tabeli, w której mamy opcję dodania nowego zasobu, edycji istniejącego lub usunięcia. Ponadto tabela oferuje standardowe operacje takie jak:
+- sortowanie,
+- wyszukiwanie
 
 ## O projekcie
 Projekt powstał w ramach pracy inżynierskiej "Internetowy frontend do klastra wysokiej dostępności zrealizowanego w oparciu o Pacemaker" 
