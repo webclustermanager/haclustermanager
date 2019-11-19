@@ -22,5 +22,4 @@ npm install
 ## O projekcie
 Projekt powstał w ramach pracy inżynierskiej "Internetowy frontend do klastra wysokiej dostępności zrealizowanego w oparciu o Pacemaker" 
 
-UCZELNIA: Wyższa Szkoła Zarządzania i Bankowości w Krakowie. 
-PROMOTOR: dr inż. Darin Nikolow
+UCZELNIA: Wyższa Szkoła Zarządzania i Bankowości w Krakowie.  PROMOTOR: dr inż. Darin Nikolow
